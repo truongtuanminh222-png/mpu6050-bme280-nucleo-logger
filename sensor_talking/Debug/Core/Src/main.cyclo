@@ -1,0 +1,14 @@
+../Core/Src/main.c:117:1:__io_putchar	1
+../Core/Src/main.c:124:9:BME280_Compensate_T	1
+../Core/Src/main.c:133:10:BME280_Compensate_P	2
+../Core/Src/main.c:153:16:Check_Enter_Pressed	4
+../Core/Src/main.c:171:26:I2C1_SafeReinit	1
+../Core/Src/main.c:197:13:I2C_Bus_Recover	2
+../Core/Src/main.c:221:13:Handle_Streaming_Toggle	2
+../Core/Src/main.c:240:5:main	12
+../Core/Src/main.c:413:6:SystemClock_Config	3
+../Core/Src/main.c:461:13:MX_I2C1_Init	2
+../Core/Src/main.c:495:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:528:13:MX_GPIO_Init	1
+../Core/Src/main.c:575:6:HAL_GPIO_EXTI_Callback	4
+../Core/Src/main.c:602:6:Error_Handler	1
