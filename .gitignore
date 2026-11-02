@@ -1,21 +1,30 @@
 # STM32CubeIDE build output
-   Debug/
-   Release/
-   *.o
-   *.d
-   *.su
-   *.cyclo
-   *.elf
-   *.map
-   *.list
-   *.bin
-   *.hex
+Debug/
+Release/
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.map
+*.list
+*.bin
+*.hex
 
-   # STM32CubeIDE / Eclipse project metadata (keep .project/.cproject, drop the rest)
-   .metadata/
-   .settings/
-   *.launch
+# STM32CubeIDE / Eclipse project metadata (keep .project/.cproject, drop the rest)
+.metadata/
+.settings/
+*.launch
 
-   # OS junk
-   Thumbs.db
-   .DS_Store
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logged data (keep only the small sample in docs/)
+*.csv
+!docs/*.csv
+
+# OS junk
+Thumbs.db
+.DS_Store
