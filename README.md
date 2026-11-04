@@ -34,7 +34,8 @@ after repeated read failures.
 ## Output format
 
 ```
-Time_ms,AccelX_g,AccelY_g,AccelZ_g,Temp_C,Press_hPa,AccelOK,BmeOK
+AccelX_g,AccelY_g,AccelZ_g,Temp_C,Press_hPa,AccelOK,BmeOK.
+Delete the bullet beginning `Time_ms`: milliseconds since boot
 ```
 
 - `Time_ms`: milliseconds since boot (`HAL_GetTick()`)
