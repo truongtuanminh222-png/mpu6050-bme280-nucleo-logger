@@ -34,10 +34,9 @@ after repeated read failures.
 ## Output format
 
 ```
-AccelX_g,AccelY_g,AccelZ_g,Temp_C,Press_hPa,AccelOK,BmeOK.
+AccelX_g,AccelY_g,AccelZ_g,Temp_C,Press_hPa,AccelOK,BmeOK
 ```
 
-- `Time_ms`: milliseconds since boot (`HAL_GetTick()`)
 - `AccelX/Y/Z_g`: acceleration in g (9.81 m/s²)
 - `Temp_C`: temperature in °C
 - `Press_hPa`: pressure in hPa
