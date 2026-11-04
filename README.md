@@ -35,7 +35,6 @@ after repeated read failures.
 
 ```
 AccelX_g,AccelY_g,AccelZ_g,Temp_C,Press_hPa,AccelOK,BmeOK.
-Delete the bullet beginning `Time_ms`: milliseconds since boot
 ```
 
 - `Time_ms`: milliseconds since boot (`HAL_GetTick()`)
@@ -82,9 +81,7 @@ mid-transaction, the bus needs a GPIO clock-out sequence, which is not implement
   CubeMX-generated `MX_I2C1_Init()`, whose failure path is `Error_Handler()`
   (`__disable_irq(); while(1){}`). On a real bus glitch this froze the whole MCU,
   including the button interrupt. Fixed with a safe re-init that returns a status.
-- **Pressure offset:** MEASURE THIS: state the offset, e.g. "+X hPa versus a
-  weather-station reading", and say whether the reference was station pressure or
-  sea-level-adjusted pressure.
+- Pressure offset: the pressure readings show an uncorrected offset that has not yet been quantified against a reference.
 
 ## License
 
