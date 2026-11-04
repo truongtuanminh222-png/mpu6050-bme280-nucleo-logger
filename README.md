@@ -81,16 +81,10 @@ mid-transaction, the bus needs a GPIO clock-out sequence, which is not implement
   CubeMX-generated `MX_I2C1_Init()`, whose failure path is `Error_Handler()`
   (`__disable_irq(); while(1){}`). On a real bus glitch this froze the whole MCU,
   including the button interrupt. Fixed with a safe re-init that returns a status.
-- **Pressure offset:** [MEASURE THIS: state the offset, e.g. "+X hPa versus a
+- **Pressure offset:** MEASURE THIS: state the offset, e.g. "+X hPa versus a
   weather-station reading", and say whether the reference was station pressure or
-  sea-level-adjusted pressure.]
-
-## Fault test
-
-[ADD THIS AFTER YOU TEST IT: unplug SDA or a sensor while streaming, then describe
-what the log shows: the flags dropping to 0, the recovery message, and whether
-streaming resumed after reconnecting.]
+  sea-level-adjusted pressure.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT, see LICENSE.
