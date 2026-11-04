@@ -11,11 +11,10 @@ after repeated read failures.
 - Start/stop logging on demand, via either:
   - **Enter** in a serial terminal
   - the onboard **User button (B1)**
-- CSV output with a millisecond timestamp, ready for Excel, Python or MATLAB
+- CSV output ready for Excel, Python or MATLAB
 - Per-sample validity flags (`AccelOK`, `BmeOK`) so a failed read is never
   silently hidden behind a stale value
-- I2C re-initialization: after 5 consecutive failed cycles the firmware
-  re-initializes the I2C peripheral and resumes without a manual reset
+- I2C re-initialization: after 5 consecutive failed cycles the firmware re-initializes the I2C peripheral and retries
 - Non-blocking failure handling: the recovery routine reports failure instead of
   calling the CubeMX `Error_Handler()`, so UART and the button stay responsive
 
